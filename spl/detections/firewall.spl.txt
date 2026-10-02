@@ -1,0 +1,4 @@
+index=main source="firewall_logs.csv"
+| stats count as connection_attempts by src_ip
+| where connection_attempts >= 50
+| sort -connection_attempts

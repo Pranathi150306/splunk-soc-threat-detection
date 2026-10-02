@@ -1,0 +1,5 @@
+index=main source="dns_logs.csv"
+| search query="*"
+| stats count as dns_requests by query, src_ip
+| where dns_requests >= 20
+| sort -dns_requests
