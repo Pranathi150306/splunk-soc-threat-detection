@@ -1,0 +1,50 @@
+# SOC Security Monitoring Dashboard
+
+## Overview
+
+The SOC Security Monitoring Dashboard was created in Splunk to provide a centralized view of security events collected from multiple log sources.
+
+The dashboard helps a SOC analyst monitor authentication activity, PowerShell activity, source IPs, users, and overall security event volume.
+
+## Dashboard Panels
+
+### 1. Total Security Events
+Shows the total number of security events available in the Splunk dataset.
+
+### 2. Failed Login Events
+Shows the number of failed authentication events detected in the logs.
+
+### 3. Successful Login Events
+Shows successful authentication activity for comparison with failed login activity.
+
+### 4. Top Source IPs
+Shows source IP addresses associated with failed login attempts.
+
+### 5. Top Users
+Shows users associated with PowerShell activity.
+
+### 6. Events Over Time
+Shows the number of security events over time and helps identify periods of increased activity.
+
+### 7. PowerShell Parent Processes
+Shows the parent processes that launched PowerShell, helping with process relationship analysis.
+
+## Purpose
+
+The dashboard provides a centralized monitoring view that can help a SOC analyst:
+
+- Monitor security events
+- Identify unusual authentication activity
+- Investigate suspicious PowerShell relationships
+- Review source IP activity
+- Analyze security events over time
+- Support security investigations
+
+## Tools
+
+- Splunk Enterprise
+- SPL (Search Processing Language)
+- Linux
+- Windows Security Logs
+- Sysmon
+- Authentication Logs
